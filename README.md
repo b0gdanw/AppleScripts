@@ -13,4 +13,6 @@ Java6forCatalina.scpt removes the instalation limits from Java for OS X 2017-001
 NConvertHEICtoJPEG.scpt uses NConvert to convert HEIC/HEIF files to JPEG and remove metadata.
 Note: "NConvert is provided as FREEWARE (NO Adware, NO Spyware) for private or educational use (including non-profit organizations)." https://www.xnview.com/en/nconvert/
 
+appexRemover.scpt finds and offers the option to delete appex files from applications
+
 Introduction to AppleScript Language Guide https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html
