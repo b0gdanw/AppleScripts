@@ -17,4 +17,6 @@ Note: "NConvert is provided as FREEWARE (NO Adware, NO Spyware) for private or e
 
 appexRemover.scpt finds and offers the option to delete appex files from applications
 
+SortText.scpt takes the text from clipboard, sorts it and copies the sorted text back into clipboard
+
 Introduction to AppleScript Language Guide https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html
