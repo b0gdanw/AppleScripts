@@ -11,7 +11,7 @@ if answer is equal to "Folder" then
 			set theName to displayed name of currentFile
 			set theOutputFolder to POSIX path of ((container of currentFile) as text)
 			set theImage to quoted form of POSIX path of (currentFile as string)
-			do shell script "sips" & " -s format jpeg -s formatOptions " & theQuality & " " & theImage & " -o " & theOutputFolder & theQuality & "-" & theName & ".jpg"
+			do shell script "sips" & " -s format jpeg -s formatOptions " & theQuality & " " & theImage & " -o " & theOutputFolder & theQuality & "-" & quoted form of theName & ".jpg"
 			set extension hidden of currentFile to false
 		end repeat
 	end tell
@@ -27,7 +27,7 @@ if answer is equal to "Files" then
 			set theName to displayed name of currentFile
 			set theOutputFolder to POSIX path of ((container of currentFile) as text)
 			set theImage to quoted form of POSIX path of (currentFile as string)
-			do shell script "sips" & " -s format jpeg -s formatOptions " & theQuality & " " & theImage & " -o " & theOutputFolder & theQuality & "-" & theName & ".jpg"
+			do shell script "sips" & " -s format jpeg -s formatOptions " & theQuality & " " & theImage & " -o " & theOutputFolder & theQuality & "-" & quoted form of theName & ".jpg"
 			set extension hidden of currentFile to false
 		end repeat
 	end tell
