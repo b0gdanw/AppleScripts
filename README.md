@@ -12,6 +12,8 @@ GetSysInfoCatalina.scpt reads and displays information about macOS Catalina (10.
 
 GetSysInfoMojave.scpt same for Mojave (macOS 10.14)
 
+macOSinAppStore.scpt opens the links for OSX & macOS versions directly in the App Store
+
 Java6forCatalina.scpt removes the instalation limits from Java for OS X 2017-001 so it can be installed on macOS 10.15 Catalina
 
 NConvertHEICtoJPEG.scpt uses NConvert to convert HEIC/HEIF files to JPEG and remove metadata.
