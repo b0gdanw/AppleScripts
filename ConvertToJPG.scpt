@@ -5,7 +5,7 @@ if answer is equal to "Folder" then
 	set question to display dialog "Please select the quality " buttons {"low", "normal", "high"}
 	set theQuality to button returned of question
 	tell application "Finder"
-		set theFiles to (get every file of theSourceFolder whose name extension is in {"HEIC", "HEIF", "PNG", "BMP", "JPEG", "jp2", "TIFF", "PSD"})
+		set theFiles to (get every file of theSourceFolder whose name extension is in {"HEIC", "HEIF", "PNG", "BMP", "JPEG", "jp2", "TIFF", "PSD", "WebP"})
 		repeat with currentFile in theFiles
 			set extension hidden of currentFile to true
 			set theName to displayed name of currentFile
