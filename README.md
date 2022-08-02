@@ -23,4 +23,6 @@ appexRemover.scpt finds and offers the option to delete appex files from applica
 
 SortText.scpt takes the text from clipboard, sorts it and copies the sorted text back into clipboard
 
+Unpack-Repack-PKG.scpt unpack a pgk file, repack the folder into a pkg file without signature
+
 Introduction to AppleScript Language Guide https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html
