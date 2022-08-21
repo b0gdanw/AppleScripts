@@ -8,6 +8,8 @@ ConvertToJPG.scpt uses Apple's sips to convert image files to JPG with low, norm
 
 ConvertHEICtoJPEG.scpt uses Apple's Image Events to convert HEIC/HEIF files to JPEG
 
+GetSysInfo11-12.scpt reads and displays information about macOS Big Sur (11) and Monterey (12) version, build number, XProtect, Gatekeeper, SIP and MRT
+
 GetSysInfoCatalina.scpt reads and displays information about macOS Catalina (10.15) version, build number, XProtect, Gatekeeper, SIP and MRT
 
 GetSysInfoMojave.scpt same for Mojave (macOS 10.14)
