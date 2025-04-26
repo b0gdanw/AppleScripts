@@ -9,7 +9,8 @@
 # adhoc https://developer.apple.com/documentation/security/seccodesignatureflags/adhoc
 # Code Signing Tasks https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Procedures/Procedures.html
 
-set theApp to choose file with prompt "Please select an application:" of type {"app"}
+--set theApp to choose file with prompt "Please select an application:" of type {"app"}
+set theApp to choose file with prompt "Please select an application:"
 set appPath to POSIX path of theApp
 try
 	set QuAtt to "Quarantine attribute:" & return & (do shell script "xattr -pl com.apple.quarantine " & quoted form of appPath)
@@ -28,11 +29,11 @@ if theAnswer is equal to "Remove the quarantine attribute" then
 	do shell script "xattr -rd com.apple.quarantine " & quoted form of appPath
 end if
 if theAnswer is equal to "Sign with an ad-hoc signature" then
-	do shell script "codesign --remove-signature " & quoted form of appPath & "; codesign --force --deep --sign - " & quoted form of appPath
+	do shell script "xattr -cr " & quoted form of appPath & ";codesign --remove-signature " & quoted form of appPath & "; codesign --force --deep --sign - " & quoted form of appPath
 end if
 if theAnswer is equal to "Remove the quarantine attribute & Sign with an ad-hoc signature" then
 	do shell script "xattr -rd com.apple.quarantine " & quoted form of appPath
-	do shell script "codesign --remove-signature " & quoted form of appPath & "; codesign --force --deep --sign - " & quoted form of appPath
+	do shell script "xattr -cr " & quoted form of appPath & ";codesign --remove-signature " & quoted form of appPath & "; codesign --force --deep --sign - " & quoted form of appPath
 end if
 set theQuestion2 to display dialog "Operation completed." & return & "Would you like to open the app?" buttons {"Yes", "No"} default button "Yes" cancel button "No"
 set theAnswer2 to button returned of theQuestion2
