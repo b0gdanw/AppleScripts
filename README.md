@@ -2,6 +2,8 @@
 
 Collection of AppleScripts 
 
+appexRemover.scpt finds and offers the option to delete appex files from applications
+
 ChangeDNS.scpt Set DNS servers for Ethernet to Google DNS, OpenDNS or Cloudflare DNS
 
 Clean_Chrome.scpt Deletes caches and all files and folders from ~/Library/Application Support/Google/Chrome, with the exception of Local State, First Run, Last Version, Bookmarks, Preferences and Secure Preferences.
@@ -25,12 +27,12 @@ Java6forCatalina.scpt removes the instalation limits from Java for OS X 2017-001
 NConvertHEICtoJPEG.scpt uses NConvert to convert HEIC/HEIF files to JPEG and remove metadata.
 Note: "NConvert is provided as FREEWARE (NO Adware, NO Spyware) for private or educational use (including non-profit organizations)." https://www.xnview.com/en/nconvert/
 
-appexRemover.scpt finds and offers the option to delete appex files from applications
+SafariWebAppUninstaller.scpt - AppleScript that searches for files or folders associated with a web app created by Safari on macOS Sonoma or later
 
 SortText.scpt takes the text from clipboard, sorts it and copies the sorted text back into clipboard
 
-Unpack-Repack-PKG.scpt unpack a pgk file, repack the folder into a pkg file without signature
-
 Remove-quarantine-attribute_Sign-with-an ad-hoc-signature.scpt The script checks if an app has the quarantine attribute and if it is signed. Then offers to remove the quarantine attribute, remove the signature and re-sign the app with an ad-hoc signature.
+
+Unpack-Repack-PKG.scpt unpack a pgk file, repack the folder into a pkg file without signature
 
 Introduction to AppleScript Language Guide https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html
