@@ -4,3 +4,5 @@ do shell script "find ~/Library/Application\\ Support/Google/Chrome/* ! -name 'D
 do shell script "find ~/Library/Application\\ Support/Google/Chrome/ ! -name 'First Run' ! -name 'Last Version' ! -name 'Local State' ! -name 'Bookmarks' ! -name 'Preferences' ! -name 'Secure Preferences' -type f -exec rm -f {} + "
 --Deletes ~/Library/Caches/Google/Chrome
 do shell script "rm -rf ~/Library/Caches/Google/Chrome"
+--Deletes ~/Library/Saved Application State/com.google.Chrome.savedState
+do shell script "rm -rf ~/Library/Saved\\ Application\\ State/com.google.Chrome.savedState"
