@@ -8,6 +8,8 @@ ChangeDNS.scpt Set DNS servers for Ethernet to Google DNS, OpenDNS or Cloudflare
 
 Clean_Chrome.scpt Deletes caches and all files and folders from ~/Library/Application Support/Google/Chrome, with the exception of Local State, First Run, Last Version, Bookmarks, Preferences and Secure Preferences.
 
+CleanLaunch.scpt searches for files in ~/Library/LaunchAgents, /Library/LaunchAgents, /Library/LaunchDaemons & /Library/PrivilegedHelperTools and offers the option to delete them one by one
+
 ConvertToJPG.scpt uses Apple's sips to convert image files to JPG with low, normal or high quality
 
 ConvertHEICtoJPEG.scpt uses Apple's Image Events to convert HEIC/HEIF files to JPEG
