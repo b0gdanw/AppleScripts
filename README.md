@@ -35,6 +35,8 @@ SortText.scpt takes the text from clipboard, sorts it and copies the sorted text
 
 Remove-quarantine-attribute_Sign-with-an ad-hoc-signature.scpt The script checks if an app has the quarantine attribute and if it is signed. Then offers to remove the quarantine attribute, remove the signature and re-sign the app with an ad-hoc signature.
 
+UnInstaller.scpt The script reads the BundleIdentifier of the selected app and lists the files/folders in Home (~/) that contain it, with an option to delete them. Useful for uninstalling apps or resetting them to a newly installed state.
+
 Unpack-Repack-PKG.scpt unpack a pgk file, repack the folder into a pkg file without signature
 
 Introduction to AppleScript Language Guide https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html
